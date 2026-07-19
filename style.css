@@ -600,10 +600,11 @@ body {
 
   /* ---------- SNS ---------- */
 
-  .sns-icons{
-    flex-direction:column;
-    gap:15px;
-  }
+.sns-icons{
+    flex-direction:row;
+    justify-content:center;
+    gap:20px;
+}
 
 }
 
