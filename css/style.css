@@ -141,19 +141,24 @@ body {
 /* ---------- Page Layout ---------- */
 
 .profile,
+.engineer,
 .plate,
 .song,
 .song-detail,
 .plate-detail {
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   padding: 80px 20px;
 }
 
 /* ---------- Page Title ---------- */
 
+.profile-title,
 .plate-title,
 .song-title {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
   font-size: 56px;
   font-weight: 600;
 }
@@ -194,8 +199,8 @@ body {
 .plate-card,
 .song-card {
   display: block;
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
   transition: .3s;
 }
 
@@ -231,15 +236,6 @@ body {
    Profile
 ======================================== */
 
-.profile-title {
-  width: 85%;
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  font-size: 56px;
-  font-weight: 600;
-  text-align: left;
-}
-
 .profile-hero {
   display: block;
   width: 85%;
@@ -250,15 +246,25 @@ body {
 
 .profile-content {
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .profile-content h1 {
+  margin: 0;
   font-size: 48px;
 }
 
+.profile-content h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .profile-sub {
+  margin: 10px 0 30px;
   font-size: 18px;
+  color: #777;
 }
 
 .profile-content p {
@@ -513,7 +519,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
 
-  box-shadow: 0 8px 30px rgba(0,0,0,.12);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .12);
 
   white-space: pre-line;
   line-height: 1.9;
@@ -712,13 +718,13 @@ body {
   }
 
   .profile-content h2{
-    margin: 10px 0 30px;
-    font-size: 38px;
-    font-weight: 700;
+    margin:0;
+    font-size:34px;
+    font-weight:700;
   }
 
   .profile-sub{
-    margin-bottom:25px;
+    margin:10px 0 25px;
     font-size:18px;
   }
 
