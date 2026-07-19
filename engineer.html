@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>UmeCha engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="image/favicon.png">
+</head>
+
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header">
+
+    <!-- 左：ホームリンク -->
+    <a href="index.html" class="header-home">
+      <span class="logo-main">UmeCha</span>
+      <span class="logo-sub">OFFICIAL</span>
+    </a>
+
+    <!-- 右：ハンバーガー -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ===== ハンバーガーメニュー中身（追加）===== -->
+    <nav class="hamburger-menu">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="plate.html">Plate</a>
+      <a href="song.html">Song</a>
+      <a href="engineer.html">Engineer</a>      
+    </nav>
+
+  </header>
+
+  <!-- ===== 本文 ===== -->
+  <main class="engineer">
+    <h1 class="engineer-title">Engineer</h1>
+
+    <!-- SNSゾーン -->
+    <section class="sns-zone">
+      <p class="sns-title">FOLLOW ON</p>
+
+      <div class="sns-icons">
+        <a href="https://x.com/yaneura_1997" aria-label="X">
+         <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://github.com/yaneura1997" aria-label="GitHub">
+         <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://qiita.com/yaneura_engineer" aria-label="Qiita">
+         <i class="fa-solid fa-q"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© UmeCha</p>
+  </footer>
+
+  <!-- JSP_ハンバーガー用 -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.hamburger-menu');
+    
+    hamburger.addEventListener('click', () => {
+    menu.classList.toggle('is-open');
+    });
+  </script>
+
+</body>
+</html>
