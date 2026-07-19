@@ -1,100 +1,148 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
+  <!-- =======================================
+       Meta
+  ======================================== -->
+
   <meta charset="UTF-8">
-  <title>UmeCha Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <!-- ページタイトル -->
+  <title>UmeCha Profile</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome（SNSアイコン） -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="image/favicon.png">
+
 </head>
 
 <body>
 
-<header class="header">
+  <!-- =======================================
+       Header
+  ======================================== -->
 
-  <a href="index.html" class="header-home">
-    <span class="logo-main">UmeCha</span>
-    <span class="logo-sub">OFFICIAL</span>
-  </a>
+  <header class="header">
 
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <!-- ロゴ -->
+    <a href="index.html" class="header-home">
+      <span class="logo-main">UmeCha</span>
+      <span class="logo-sub">OFFICIAL</span>
+    </a>
 
-  <nav class="hamburger-menu">
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="plate.html">Plate</a>
-    <a href="song.html">Song</a>
-    <a href="engineer.html">Engineer</a>
-  </nav>
+    <!-- ハンバーガー -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-</header>
+    <!-- メニュー -->
+    <nav class="hamburger-menu">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="plate.html">Plate</a>
+      <a href="song.html">Song</a>
+      <a href="engineer.html">Engineer</a>
+    </nav>
 
-<main class="profile">
-  <h1 class="profile-title">Profile</h1>
+  </header>
 
-  <img src="image/アーティスト写真.jpeg" alt="UmeCha" class="profile-hero">
+  <!-- =======================================
+       Main
+  ======================================== -->
 
-  <div class="profile-content">
+  <main class="profile">
 
-    <h1>UmeCha</h1>
+    <!-- ページタイトル -->
+    <h1 class="profile-title">Profile</h1>
 
-    <p class="profile-sub">
-      東京都出身 / シンガーソングライター
-    </p>
+    <!-- メイン画像 -->
+    <img
+      src="image/アーティスト写真.jpeg"
+      alt="UmeCha"
+      class="profile-hero">
 
-    <p>
-      ギター弾き語りを中心に活動。
-      日常の風景や大切な人との思い出をテーマに、
-      温かく寄り添う楽曲を制作している。
-    </p>
+    <!-- プロフィール -->
+    <div class="profile-content">
 
-    <p>
-      2026年8月1日、1st Single
-      「ホワイトデイズ」をリリース。
-    </p>
+      <h1>UmeCha</h1>
 
-    <p>
-      現在もオリジナル楽曲の制作・ライブ活動を行っている。
-    </p>
+      <p class="profile-sub">
+        東京都出身 / シンガーソングライター
+      </p>
 
-  </div>
+      <p>
+        ギター弾き語りを中心に活動。
+        日常の風景や大切な人との思い出をテーマに、
+        温かく寄り添う楽曲を制作している。
+      </p>
 
-      <!-- SNSゾーン -->
+      <p>
+        2026年8月1日、
+        1st Single「ホワイトデイズ」をリリース。
+      </p>
+
+      <p>
+        現在もオリジナル楽曲の制作・ライブ活動を行っている。
+      </p>
+
+    </div>
+
+    <!-- =======================================
+         SNS
+    ======================================== -->
+
     <section class="sns-zone">
-      <p class="sns-title">My icons</p>
+
+      <p class="sns-title">
+        My Icons
+      </p>
 
       <div class="sns-icons">
-        <a href="https://www.instagram.com/yaneura_no_inuha/" aria-label="Instagram">
-         <i class="fa-brands fa-instagram"></i>
+
+        <a href="https://www.instagram.com/yaneura_no_inuha/"
+           aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://x.com/yaneuranoinuha" aria-label="X">
-         <i class="fa-brands fa-x-twitter"></i>
+
+        <a href="https://x.com/yaneuranoinuha"
+           aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
+
       </div>
+
     </section>
 
-</main>
+  </main>
 
-<footer class="footer">
-  <p>© UmeCha</p>
-</footer>
+  <!-- =======================================
+       Footer
+  ======================================== -->
 
-<script>
-const hamburger = document.querySelector(".hamburger");
-const menu = document.querySelector(".hamburger-menu");
+  <footer class="footer">
+    <p>© UmeCha</p>
+  </footer>
 
-hamburger.addEventListener("click", () => {
-  menu.classList.toggle("is-open");
-});
-</script>
+  <!-- =======================================
+       JavaScript
+  ======================================== -->
+
+  <script src="js/menu.js"></script>
 
 </body>
 </html>

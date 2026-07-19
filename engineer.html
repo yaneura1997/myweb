@@ -1,81 +1,145 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
+  <!-- =======================================
+       Meta
+  ======================================== -->
+
   <meta charset="UTF-8">
-  <title>UmeCha engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-  
+  <!-- ページタイトル -->
+  <title>UmeCha Engineer</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="image/favicon.png">
+
 </head>
 
 <body>
 
-  <!-- ===== ヘッダー ===== -->
+  <!-- =======================================
+       Header
+  ======================================== -->
+
   <header class="header">
 
-    <!-- 左：ホームリンク -->
+    <!-- ロゴ -->
     <a href="index.html" class="header-home">
       <span class="logo-main">UmeCha</span>
       <span class="logo-sub">OFFICIAL</span>
     </a>
 
-    <!-- 右：ハンバーガー -->
+    <!-- ハンバーガー -->
     <div class="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- ===== ハンバーガーメニュー中身（追加）===== -->
+    <!-- メニュー -->
     <nav class="hamburger-menu">
       <a href="index.html">Home</a>
       <a href="profile.html">Profile</a>
       <a href="plate.html">Plate</a>
       <a href="song.html">Song</a>
-      <a href="engineer.html">Engineer</a>      
+      <a href="engineer.html">Engineer</a>
     </nav>
 
   </header>
 
-  <!-- ===== 本文 ===== -->
-  <main class="engineer">
-    <h1 class="engineer-title">Engineer</h1>
+  <!-- =======================================
+       Main
+  ======================================== -->
 
-    <!-- SNSゾーン -->
+  <main class="engineer">
+
+    <!-- ページタイトル -->
+    <h1 class="profile-title">Engineer</h1>
+
+    <!-- 紹介 -->
+    <div class="profile-content">
+
+      <h2>Infrastructure Engineer</h2>
+
+      <p class="profile-sub">
+        Infrastructure / Cloud / Automation
+      </p>
+
+      <p>
+        インフラエンジニアとして
+        Windows Server・Linux・VMware・Hyper-Vなどの
+        仮想基盤やサーバ運用に携わっています。
+      </p>
+
+      <p>
+        AWS・IaC・Web開発にも興味があり、
+        日々学習内容や制作物を発信しています。
+      </p>
+
+    </div>
+
+    <br><br>
+
+    <!-- =======================================
+         SNS
+    ======================================== -->
+
     <section class="sns-zone">
-      <p class="sns-title">FOLLOW ON</p>
+
+      <p class="sns-title">
+        Engineer Accounts
+      </p>
 
       <div class="sns-icons">
-        <a href="https://x.com/yaneura_1997" aria-label="X">
-         <i class="fa-brands fa-x-twitter"></i>
+
+        <a href="https://x.com/yaneura_1997"
+           aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
-        <a href="https://github.com/yaneura1997" aria-label="GitHub">
-         <i class="fa-brands fa-github"></i>
+
+        <a href="https://github.com/yaneura1997"
+           aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://qiita.com/yaneura_engineer" aria-label="Qiita">
-         <i class="fa-solid fa-q"></i>
+
+        <a href="https://qiita.com/yaneura_engineer"
+           aria-label="Qiita">
+          <i class="fa-solid fa-q"></i>
         </a>
+
       </div>
+
     </section>
+
   </main>
+
+  <!-- =======================================
+       Footer
+  ======================================== -->
 
   <footer class="footer">
     <p>© UmeCha</p>
   </footer>
 
-  <!-- JSP_ハンバーガー用 -->
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.hamburger-menu');
-    
-    hamburger.addEventListener('click', () => {
-    menu.classList.toggle('is-open');
-    });
-  </script>
+  <!-- =======================================
+       JavaScript
+  ======================================== -->
+
+  <script src="js/menu.js"></script>
 
 </body>
 </html>

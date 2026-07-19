@@ -1,235 +1,209 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
+  <!-- =======================================
+       Meta
+  ======================================== -->
+
   <meta charset="UTF-8">
-  <title>ホワイトデイズ | UmeCha</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-  
-  <link rel="icon" type="image/png" href="../image/favicon.png">
+  <!-- ページタイトル -->
+  <title>ホワイトデイズ | UmeCha</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon"
+        type="image/png"
+        href="../image/favicon.png">
+
 </head>
 
 <body>
-  <!-- ===== ヘッダー ===== -->
+
+  <!-- =======================================
+       Header
+  ======================================== -->
+
   <header class="header">
 
-    <!-- 左：ホームリンク -->
+    <!-- ロゴ -->
     <a href="../index.html" class="header-home">
       <span class="logo-main">UmeCha</span>
       <span class="logo-sub">OFFICIAL</span>
     </a>
 
-    <!-- 右：ハンバーガー -->
+    <!-- ハンバーガー -->
     <div class="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- ===== ハンバーガーメニュー中身（追加）===== -->
+    <!-- メニュー -->
     <nav class="hamburger-menu">
       <a href="../index.html">Home</a>
       <a href="../profile.html">Profile</a>
       <a href="../plate.html">Plate</a>
       <a href="../song.html">Song</a>
+      <a href="../engineer.html">Engineer</a>
     </nav>
 
   </header>
 
-<main class="song-detail">
+  <!-- =======================================
+       Main
+  ======================================== -->
 
-  <div class="song-detail-inner">
+  <main class="song-detail">
 
-    <img src="../image/ホワイトデイズ_ジャケ写.jpg" alt="ホワイトデイズ">
+    <div class="song-detail-inner">
 
-    <div class="song-info">
+      <!-- ジャケット -->
+      <img src="../image/ホワイトデイズ_ジャケ写.jpg"
+           alt="ホワイトデイズ">
 
-      <h1>ホワイトデイズ</h1>
+      <!-- 楽曲情報 -->
+      <div class="song-info">
 
-      <p class="type">Single</p>
+        <h1>ホワイトデイズ</h1>
 
-      <p class="release">
-        RELEASE 2026.08.01
-      </p>
+        <p class="type">
+          Single
+        </p>
 
-      <div class="credit">
-        <p><strong>Lyrics</strong>：UmeCha</p>
-        <p><strong>Music</strong>：UmeCha</p>
-        <p><strong>Arrangement</strong>：UmeCha</p>
-      </div>
+        <p class="release">
+          RELEASE 2026.08.01
+        </p>
 
-<hr>
+        <div class="credit">
 
-<div class="track-list">
+          <p>
+            <strong>Lyrics</strong>：UmeCha
+          </p>
 
-    <h2>TRACK LIST</h2>
+          <p>
+            <strong>Music</strong>：UmeCha
+          </p>
 
-<div class="track">
-
-    <div class="track-head">
-
-        <div class="track-left">
-
-            <span class="track-title">
-                01. ホワイトデイズ
-
-                <span class="lyrics-popup">ホワイトデイズ
-
-                    どんな時でも笑顔くれた
-                    かわいくてあったかい食いしん坊なとこも
-                    大好きだった そのぬくもりが
-                    ずっと近くにあるものだと思ってた
-
-                    涙なんて流さないで歩いていくよ
-                    君のあたたかさ残るこの街で
-                    滲んだ空に向かいこの思い届けるよ
-                    it's my white days 君に届くように
-
-                    ぎゅっとして安心する不思議な魔法
-                    凍った心が静かに解けるように
-
-                    君がくれた光集めて僕は唄う
-                    it's our white days 君に届くように
-                </span>
-
-            </span>
-
-            <button class="play">▶</button>
+          <p>
+            <strong>Arrangement</strong>：UmeCha
+          </p>
 
         </div>
 
+        <hr>
+
+        <!-- =======================================
+             Track List
+        ======================================== -->
+
+        <div class="track-list">
+
+          <h2>TRACK LIST</h2>
+
+          <div class="track">
+
+            <div class="track-head">
+
+              <div class="track-left">
+
+                <span class="track-title">
+
+                  01. ホワイトデイズ
+
+                  <span class="lyrics-popup">
+ホワイトデイズ
+
+どんな時でも笑顔くれた
+かわいくてあったかい食いしん坊なとこも
+大好きだった そのぬくもりが
+ずっと近くにあるものだと思ってた
+
+涙なんて流さないで歩いていくよ
+君のあたたかさ残るこの街で
+滲んだ空に向かいこの思い届けるよ
+it's my white days 君に届くように
+
+ぎゅっとして安心する不思議な魔法
+凍った心が静かに解けるように
+
+君がくれた光集めて僕は唄う
+it's our white days 君に届くように
+                  </span>
+
+                </span>
+
+                <button class="play">
+                  ▶
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="player">
+
+              <span class="current">
+                0:00
+              </span>
+
+              <input
+                type="range"
+                class="seek"
+                value="0"
+                min="0"
+                max="100">
+
+              <span class="duration">
+                0:00
+              </span>
+
+            </div>
+
+            <audio>
+
+              <source src="../audio/ホワイトデイズ_弾き語り.m4a">
+
+            </audio>
+
+          </div>
+
+        </div>
+
+        <p class="back">
+          <a href="../song.html">
+            ← Song一覧へ戻る
+          </a>
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="player">
+  </main>
+  <!-- =======================================
+       Footer
+  ======================================== -->
 
-        <span class="current">0:00</span>
+  <footer class="footer">
+    <p>© UmeCha</p>
+  </footer>
 
-        <input
-            type="range"
-            class="seek"
-            value="0"
-            min="0"
-            max="100">
+  <!-- =======================================
+       JavaScript
+  ======================================== -->
 
-        <span class="duration">0:00</span>
+  <script src="../js/menu.js"></script>
+  <script src="../js/player.js"></script>
 
-    </div>
-
-    <audio>
-        <source src="../audio/ホワイトデイズ_弾き語り.m4a">
-    </audio>
-
-</div>
-
-</div>
-
-<p class="back">
-    <a href="../song.html">← Song一覧へ戻る</a>
-</p>
-
-  </div>
-
-</main>
-
-  <!-- ハンバーガーメニュー -->
-      <script>
-            const hamburger = document.querySelector(".hamburger");
-            const menu = document.querySelector(".hamburger-menu");
-
-            hamburger.addEventListener("click", () => {
-            menu.classList.toggle("is-open");
-            });
-      </script>
-
-        <script>
-
-        document.querySelectorAll(".track").forEach(track=>{
-
-        const audio=track.querySelector("audio");
-        const play=track.querySelector(".play");
-        const seek=track.querySelector(".seek");
-
-        const current=track.querySelector(".current");
-        const duration=track.querySelector(".duration");
-
-        play.onclick=()=>{
-
-            if(audio.paused){
-
-                document.querySelectorAll("audio").forEach(a=>{
-
-                    if(a!==audio)a.pause();
-
-                });
-
-                document.querySelectorAll(".play").forEach(b=>{
-
-                    if(b!==play)b.textContent="▶";
-
-                });
-
-                audio.play();
-
-                play.textContent="❚❚";
-
-            }else{
-
-                audio.pause();
-
-                play.textContent="▶";
-
-            }
-
-        };
-
-        audio.addEventListener("loadedmetadata",()=>{
-
-            seek.max=audio.duration;
-
-            duration.textContent=format(audio.duration);
-
-        });
-
-        audio.addEventListener("timeupdate",()=>{
-
-            seek.value=audio.currentTime;
-
-            current.textContent=format(audio.currentTime);
-
-        });
-
-        seek.addEventListener("input",()=>{
-
-            audio.currentTime=seek.value;
-
-        });
-
-        audio.addEventListener("pause",()=>{
-
-            play.textContent="▶";
-
-        });
-
-        audio.addEventListener("ended",()=>{
-
-            play.textContent="▶";
-
-        });
-
-        });
-
-        function format(sec){
-
-        const m=Math.floor(sec/60);
-
-        const s=Math.floor(sec%60);
-
-        return `${m}:${String(s).padStart(2,"0")}`;
-
-        }
-
-        </script>
 </body>
 </html>
